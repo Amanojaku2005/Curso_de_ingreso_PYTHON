@@ -39,7 +39,21 @@ class App(customtkinter.CTk):
         
     
     def btn_informar_on_click(self):
-        pass
+        
+        hora = int(self.txt_hora.get())
+
+        match(hora):
+            case 0 | 1 | 2 | 3 | 4 | 5 | 6 | 20 | 21 | 22 | 23 | 24:
+                alert("horario", "es de noche")
+
+            case 7 | 8 | 9 | 10 | 11:
+                alert("horario", "es de mañamna")    
+
+            case 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19:
+                alert("horario", "Es de tarde")  
+
+            case _:
+                alert("horario", "no aceptamos estos caracteres")     
     
     
 if __name__ == "__main__":

@@ -22,7 +22,7 @@ class App(customtkinter.CTk):
 
         self.title("UTN FRA")
 
-        # en la fila 25 decia edad lo cambie a altura por que me daba ansiedad (un error lo comete cualquiera) xd
+        # en la fila 27 decia edad lo cambie a altura por que me daba ansiedad y no me dejaba hacer nada (un error lo comete cualquiera) xd
 
         self.label1 = customtkinter.CTkLabel(master=self, text="altura")
         self.label1.grid(row=0, column=0, padx=20, pady=10)

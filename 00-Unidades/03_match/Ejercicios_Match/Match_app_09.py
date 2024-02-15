@@ -57,7 +57,10 @@ class App(customtkinter.CTk):
         
     
     def btn_informar_on_click(self):
-        pass
+        
+        destino = self.combobox_destino.get()
+        estaciones = self.combobox_estaciones.get()
+        
             
     
 if __name__ == "__main__":
