@@ -58,7 +58,7 @@ class App(customtkinter.CTk):
         # Caso (B)
         elif(cantidad == 5):
             if(marca == 'ArgentinaLuz'):
-                descuento = 0.6 * precio_total  # 40%  # 40% de descuento --> 100% vos le restas 40% = 100% - 40% == 60%(precio_final)
+                descuento = 0.6 * precio_total  # 40% ((40% de descuento --> 100% vos le restas 40% - 100% == 40% == 60%)) <--(precio_final)
             else:
                 descuento = 0.7 * precio_total  # 30%
 
